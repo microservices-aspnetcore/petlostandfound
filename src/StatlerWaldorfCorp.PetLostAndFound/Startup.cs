@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.DependencyInjection;
+using StatlerWaldorfCorp.PetLostAndFound.Persistence;
 
 namespace StatlerWaldorfCorp.PetLostAndFound
 {
@@ -7,6 +8,7 @@ namespace StatlerWaldorfCorp.PetLostAndFound
     {
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddScoped<IPetLostAndFoundRepository, MemroyPetLostAndFoundRepository>();            
 	        services.AddMvc();
         }
 
