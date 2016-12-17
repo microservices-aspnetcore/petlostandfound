@@ -1,9 +1,9 @@
 
 
-namespace StatlerWaldorfCorp.PetLostAndFound
+namespace StatlerWaldorfCorp.PetLostAndFound.Persistence
 {
     public interface IPetLostAndFoundRepository
     {
-        
+
     }
 }
